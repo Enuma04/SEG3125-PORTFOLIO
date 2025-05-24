@@ -1,0 +1,111 @@
+.try{
+    background-image: linear-gradient(to bottom, antiquewhite, white);
+   
+    padding-bottom: 3% 
+}
+.intro{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 0%;
+    background-color: white;
+    padding-right: 10%;
+    padding-left: 7%;
+   
+}
+.intro > img{
+    background-color: lightblue;
+    border-radius: 50%;
+    height: 20vw;
+    width:20vw;
+    align-self: center;   
+    justify-self: end;
+    margin-right: 10%;
+    grid-row: 1 / 3;
+}
+.intro>h1{
+    align-self:self-end;   
+    justify-self:baeline;
+    margin-bottom: 4%;
+}
+.intro > h2{
+    grid-row: 2 / 3;
+    grid-column: 2/3;
+}
+.nav-link{
+    color: black;
+}
+.fs-4{
+    font-family: "Caveat", cursive;
+}
+
+.projects{
+    padding: 10%;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto 1fr 1fr;
+    gap: 8%;
+    background-image: linear-gradient(to top,  beige, white);
+
+}
+
+.projects > h1{
+    grid-column: 1/-1;
+}
+.projects > div{
+    background-color: antiquewhite;
+}
+
+.construction{  
+    justify-items: center;
+}
+.intro, .projects>h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects a{
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid ;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.card a span{
+  position: relative;
+  z-index: 2;
+}
+
+.card a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: lightblue;
+  transition: all .35s;
+}
+
+/*.card a:hover{
+  color: #fff;
+  might decide to chnage button text color after
+}*/
+
+.card a:hover:after{
+  width: 100%;
+}
