@@ -59,7 +59,7 @@
 .construction{  
     justify-items: center;
 }
-.intro, .projects>h1{
+.intro, h1, p{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
