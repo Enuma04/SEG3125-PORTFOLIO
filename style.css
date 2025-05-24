@@ -59,11 +59,14 @@
 .construction{  
     justify-items: center;
 }
-.intro, h1, p{
+.intro, h1, .card{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+.card-title{
+  font-weight: 650;
 }
 .wrapper{
   position: fixed;
